@@ -1,7 +1,7 @@
 // All portfolio copy lives here. Edit this file to update the site without touching layout code.
 
-// Prefix for anything in /public — respects Vite's `base` config (this site is served under
-// /towhidul-islam/, not domain root), so every public asset path below goes through this.
+// Prefix for anything in /public — respects Vite's `base` config, so every public asset path
+// below goes through this (the site is served from the domain root, towhidulislam27.github.io).
 const BASE = import.meta.env.BASE_URL;
 const asset = (path) =>
   `${BASE}${path
