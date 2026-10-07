@@ -35,7 +35,7 @@ export const stats = [
 
 export const about = {
   paragraphs: [
-    "I am the founder and CEO of SAR.Sense Geo-Intelligence Lab, where I lead research on XAI and SAR/InSAR deformation monitoring and build the software that makes complex satellite data directly usable for planners, agencies, and fellow scientists.",
+    "I am the founder and CEO of SAR.Sense Geointelligence Lab, where I lead research on XAI and SAR/InSAR deformation monitoring and build the software that makes complex satellite data directly usable for planners, agencies, and fellow scientists.",
     "My background bridges geography, earth observation, and urban management, with degrees from ITC (University of Twente), IHS (Erasmus University Rotterdam), and the University of Chittagong, complemented by hands-on full-stack development of BanGIS Pro—a platform I designed and built from the ground up.",
     "At the core of my work is a strong belief in Science for Society. Whenever I conduct research, I run into the real-world friction of data sourcing, tedious preprocessing, and fragmented analysis pipelines. Rather than working around those bottlenecks, I leverage my software developing skills to build intuitive tools that solve those exact problems, smoothing the path for future researchers. Through tailored training programs and workshops, I pass those tools and insights directly to planners, students, and practitioners—turning academic research into practical, accessible knowledge for everyone.",
   ],
@@ -45,17 +45,21 @@ export const softwareProjects = [
   {
     id: "bangis-pro",
     name: "BanGIS Pro",
-    subtitle: "AI-native geospatial & SAR analysis platform",
-    org: "SAR.Sense Geo-Intelligence Lab",
+    subtitle: "GIS Made Simple — an AI-integrated geospatial & SAR platform",
+    org: "SAR.Sense Geointelligence Lab",
     period: "2025 – Present",
     contribution: "95% individual contribution",
     description:
-      "A full-stack geospatial platform pairing a FastAPI backend with a React/TypeScript/MapLibre GL client and a ReAct-style LLM agent that orchestrates multi-step GIS/SAR workflows from natural-language instructions — no code required.",
+      "A full-stack desktop GIS — FastAPI backend, React/TypeScript/MapLibre GL client in a Tauri shell — with Hiron, a native ReAct-style AI agent that understands your project and runs multi-step GIS and SAR workflows from plain-language instructions. No code required.",
     highlights: [
-      "Implemented SAR/InSAR processing from first principles: radiometric calibration (β⁰/σ⁰/γ⁰), Lee/Frost/Gamma-MAP speckle filtering, Range-Doppler terrain correction with Sentinel-1 orbit interpolation and DEM-based geocoding, and a full InSAR chain feeding ~90 analysis tools.",
-      "Engineered a universal geospatial ingest pipeline (Shapefile, GeoTIFF, GeoPackage, NetCDF, HDF5, KML/GML) with automated CRS/geometry validation and a vector-tiling system rendering 250k+ vertex datasets in-browser.",
-      "Integrated Google Earth Engine for satellite data retrieval and validated the platform with 438 automated backend tests covering ingest, classification, georeferencing, and SAR/InSAR algorithms.",
-      "Positioned for global release as a free, natural-language alternative to costly commercial GIS software.",
+      "Native AI throughout: Hiron, a project-aware AI agent rather than a chatbot, plus an AI button in every tool that explains parameters, live previews and results in the context of your own layers.",
+      "Automatic data fetcher for spatial data of every kind — Google Earth Engine (Sentinel-1/2, SRTM, MODIS, JRC Surface Water, CHIRPS), OpenStreetMap, GADM, Natural Earth, STAC catalogues, ArcGIS Online, AWS S3, PostGIS and web services — clipped to the area of interest and loaded automatically.",
+      "SAR/InSAR implemented from first principles — radiometric calibration (β⁰/σ⁰/γ⁰), Lee/Frost/Gamma-MAP speckle filtering, Range-Doppler terrain correction with Sentinel-1 orbit interpolation and a full InSAR chain — inside a SAR Studio organised around DInSAR, PS-InSAR, SBAS, PolSAR and TomoSAR workflows.",
+      "Every processing tool exports a reproducible report — inputs, parameters, outputs and CRS — coupled with the academic references behind the method, drawn from a built-in library of 254 documented methods.",
+      "16 domain toolboxes (disaster, agriculture, urban planning, utilities, water, forestry, coastal, health and more), GeoAI and machine/deep learning, a Digital Twin workspace, and a 20-tool integrated surveying module for field teams.",
+      "Built for coders too: an integrated Python console and a Python-scriptable layout manager (matplotlib, cartopy, geopandas, rasterio) for publication-ready maps.",
+      "Universal ingest (Shapefile, GeoTIFF, GeoPackage, NetCDF, HDF5, KML/GML) with automated CRS/geometry validation and vector tiling that renders 250k+ vertex datasets in-browser — validated by 1,568+ automated backend tests.",
+      "Launching on a freemium model: core tools free, with advanced tools in paid tiers based on their complexity and licensing requirements.",
     ],
     stack: [
       "FastAPI",
@@ -66,7 +70,8 @@ export const softwareProjects = [
       "NumPy",
       "SciPy",
       "GDAL",
-      "Groq LLaMA 3.3",
+      "Python",
+      "Groq LLM",
     ],
     video: {
       src: asset("/videos/BanGIS_Pro_Showcase_v3.mp4"),
@@ -88,7 +93,7 @@ export const softwareProjects = [
     id: "gridemy-lms",
     name: "Gridemy LMS",
     subtitle: "Learning management system",
-    org: "SAR.Sense Geo-Intelligence Lab",
+    org: "SAR.Sense Geointelligence Lab",
     period: "2025 – Present",
     description:
       "A learning management system currently in active use by the Department of Geography and Environmental Studies, University of Chittagong, and under institutional review for procurement by the Centre for Climate Change and Environmental Health (3CEH), Asian University for Women.",
@@ -156,7 +161,7 @@ export const academicProjects = [
 
 export const experience = [
   {
-    org: "SAR.Sense Geo-Intelligence Lab",
+    org: "SAR.Sense Geointelligence Lab",
     role: "Founder & Co-ordinator",
     location: "Chittagong, Bangladesh",
     period: "May 2025 – Present",
