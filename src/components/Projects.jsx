@@ -240,12 +240,6 @@ export default function Projects() {
         ))}
       </div>
 
-      <p className="mt-6 text-xs text-ink-400 dark:text-ink-500">
-        Demo videos load from <code className="rounded bg-ink-100 px-1 py-0.5 dark:bg-ink-800">/public/videos</code>{" "}
-        and screenshots from <code className="rounded bg-ink-100 px-1 py-0.5 dark:bg-ink-800">/public/images</code> —
-        drop files there using the filenames set in{" "}
-        <code className="rounded bg-ink-100 px-1 py-0.5 dark:bg-ink-800">src/data/content.js</code>.
-      </p>
     </section>
   );
 }

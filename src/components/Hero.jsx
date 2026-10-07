@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { GithubGlyph, LinkedinGlyph } from "./icons";
 import { profile } from "../data/content";
 
@@ -13,10 +13,6 @@ export default function Hero() {
 
       <div className="container-px relative grid items-center gap-12 py-24 sm:py-32 lg:grid-cols-[1fr_auto]">
         <div className="flex flex-col items-start gap-6">
-          <span className="inline-flex items-center gap-2 rounded-full border border-accent-200 bg-accent-50 px-3 py-1 text-xs font-medium text-accent-700 dark:border-accent-800 dark:bg-accent-900/30 dark:text-accent-300">
-            <MapPin size={12} />
-            {profile.location}
-          </span>
 
           <h1 className="max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
             {profile.name}
