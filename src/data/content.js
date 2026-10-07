@@ -20,7 +20,6 @@ export const profile = {
   phone: "+8801632211582",
   linkedin: "https://www.linkedin.com/in/towhidullslam/",
   github: "https://github.com/TowhidulIslam27",
-  resumeUrl: asset("/resume.pdf"), // public/resume.pdf — replace this file to update the downloadable CV
   photo: asset("/ti.jpg"),
 };
 

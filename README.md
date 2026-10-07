@@ -10,7 +10,6 @@ Built with React, Vite and Tailwind CSS.
 
 All text lives in [`src/data/content.js`](src/data/content.js) — edit it and push; no layout code needs touching.
 
-- Resume download: replace `public/resume.pdf`
 - Project screenshots: `public/images/` (see the README there)
 - Demo videos: `public/videos/` (see the README there)
 - Field photos: `public/images/experience/`

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, FileDown } from "lucide-react";
-import { profile } from "../data/content";
+import { Menu, X } from "lucide-react";
 
 const LINKS = [
   { href: "#about", label: "About" },
@@ -50,16 +49,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden md:block">
-          <a
-            href={profile.resumeUrl}
-            download
-            className="inline-flex items-center gap-2 rounded-full border border-ink-200 px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:border-accent-400 hover:text-accent-600 dark:border-ink-700 dark:text-ink-200 dark:hover:border-accent-500 dark:hover:text-accent-400"
-          >
-            <FileDown size={16} />
-            Resume
-          </a>
-        </div>
 
         <button
           type="button"
@@ -85,16 +74,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href={profile.resumeUrl}
-                download
-                className="inline-flex items-center gap-2 text-sm font-medium text-accent-600 dark:text-accent-400"
-              >
-                <FileDown size={16} />
-                Download resume
-              </a>
-            </li>
           </ul>
         </div>
       )}

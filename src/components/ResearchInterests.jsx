@@ -1,4 +1,4 @@
-import { Waves, Mountain, Brain, Thermometer, CloudRain, Users, Mail, FileDown } from "lucide-react";
+import { Waves, Mountain, Brain, Thermometer, CloudRain, Users, Mail } from "lucide-react";
 import { researchInterests, profile } from "../data/content";
 
 const ICONS = { waves: Waves, mountain: Mountain, brain: Brain, thermometer: Thermometer, cloud: CloudRain, users: Users };
@@ -57,14 +57,6 @@ export default function ResearchInterests() {
               >
                 <Mail size={16} />
                 Get in touch
-              </a>
-              <a
-                href={profile.resumeUrl}
-                download
-                className="inline-flex items-center gap-2 rounded-full border border-ink-200 px-5 py-2.5 text-sm font-semibold text-ink-700 transition-colors hover:border-accent-400 hover:text-accent-600 dark:border-ink-700 dark:text-ink-200 dark:hover:border-accent-500 dark:hover:text-accent-400"
-              >
-                <FileDown size={16} />
-                Download CV
               </a>
             </div>
           </div>
