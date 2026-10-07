@@ -69,7 +69,7 @@ export const softwareProjects = [
       "Groq LLaMA 3.3",
     ],
     video: {
-      src: asset("/videos/bangis-pro-demo.mp4"),
+      src: asset("/videos/BanGIS_Pro_Showcase_v3.mp4"),
       poster: asset("/videos/bangis-pro-poster.jpg"),
     },
     images: [
