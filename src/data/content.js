@@ -48,14 +48,13 @@ export const softwareProjects = [
     subtitle: "GIS Made Simple — an AI-integrated geospatial & SAR platform",
     org: "SAR.Sense Geointelligence Lab",
     period: "2025 – Present",
-    contribution: "95% individual contribution",
     description:
       "A full-stack desktop GIS — FastAPI backend, React/TypeScript/MapLibre GL client in a Tauri shell — with Hiron, a native ReAct-style AI agent that understands your project and runs multi-step GIS and SAR workflows from plain-language instructions. No code required.",
     facts: [
+      { value: "800+", label: "geospatial tools" },
+      { value: "16", label: "specialised domain toolboxes" },
       { value: "1,568+", label: "automated backend tests" },
-      { value: "16", label: "domain toolboxes" },
       { value: "254", label: "documented methods" },
-      { value: "95%", label: "individual contribution" },
     ],
     highlights: [
       {
@@ -75,7 +74,7 @@ export const softwareProjects = [
         text: "Every tool exports a reproducible report — inputs, parameters, outputs and CRS — citing the literature behind the method from a library of 254 documented methods.",
       },
       {
-        title: "16 domain toolboxes",
+        title: "16 specialised domain toolboxes",
         text: "Disaster, agriculture, urban planning, utilities, water, forestry, coastal, health and more — plus GeoAI, machine & deep learning, a Digital Twin workspace and a 20-tool surveying module.",
       },
       {
