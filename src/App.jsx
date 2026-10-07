@@ -23,10 +23,10 @@ function App() {
         <About />
         <Band><ResearchInterests /></Band>
         <ResearchProjects />
-        <Band><Publications /></Band>
-        <Projects />
-        <Band><Experience /></Band>
-        <Education />
+        <Band><Projects /></Band>
+        <Experience />
+        <Band><Education /></Band>
+        <Publications />
         <Band><Skills /></Band>
         <Contact />
       </main>
