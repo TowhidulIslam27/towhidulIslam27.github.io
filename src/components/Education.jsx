@@ -3,7 +3,7 @@ import { education, awards, training, languages } from "../data/content";
 
 export default function Education() {
   return (
-    <section id="education" className="bg-ink-50/60 py-20 dark:bg-ink-900/30 sm:py-28">
+    <section id="education" className="py-20 sm:py-28">
       <div className="container-px grid gap-12 md:grid-cols-2">
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-widest text-accent-600 dark:text-accent-400">

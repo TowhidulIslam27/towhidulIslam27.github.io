@@ -6,7 +6,7 @@ const ICONS = { waves: Waves, mountain: Mountain, brain: Brain, thermometer: The
 export default function ResearchInterests() {
   const { intro, areas, cta } = researchInterests;
   return (
-    <section id="interests" className="bg-ink-50/60 py-20 dark:bg-ink-900/30 sm:py-28">
+    <section id="interests" className="py-20 sm:py-28">
       <div className="container-px">
         <p className="text-sm font-semibold uppercase tracking-widest text-accent-600 dark:text-accent-400">
           Research Interests

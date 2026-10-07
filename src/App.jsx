@@ -11,6 +11,9 @@ import Publications from "./components/Publications";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// Alternating background bands keep consecutive sections visually distinct.
+const Band = ({ children }) => <div className="bg-ink-50/60 dark:bg-ink-900/30">{children}</div>;
+
 function App() {
   return (
     <div className="min-h-svh">
@@ -18,13 +21,13 @@ function App() {
       <main>
         <Hero />
         <About />
-        <ResearchInterests />
-        <Projects />
+        <Band><ResearchInterests /></Band>
         <ResearchProjects />
-        <Experience />
+        <Band><Publications /></Band>
+        <Projects />
+        <Band><Experience /></Band>
         <Education />
-        <Skills />
-        <Publications />
+        <Band><Skills /></Band>
         <Contact />
       </main>
       <Footer />

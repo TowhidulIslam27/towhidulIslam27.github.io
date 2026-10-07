@@ -395,6 +395,21 @@ export const languages = [
 export const publications = [
   {
     citation:
+      "Uddin, M.S., Mitra, B., Rahman, M.S., Mahmud, K., Islam, T., Rahman, S.M., & Rahman, M.M. (2026). Integrating shared socioeconomic pathways and deep learning for future CO₂ emission forecasts in major European Union economies. Environment, Development and Sustainability.",
+    tag: "Accepted with minor corrections",
+  },
+  {
+    citation:
+      "Uddin, M.S., Mahmud, K., Islam, T., & Rahman, M.A. (2026). Explainable machine learning assessment of hydroclimatic and land-surface controls on agricultural drought in North-Western Bangladesh. Journal of Hydrology.",
+    tag: "Under review",
+  },
+  {
+    citation:
+      "Uddin, M.S., Mahmud, K., Rahaman, M.A., Mitra, B., Rahman, S.M., Islam, T., Rahman, M.M., & Rahman, M.S. Hands-on geomatics for marine conservation. In Marine biodiversity dynamics in the Arabian Peninsula. Springer.",
+    tag: "Under review",
+  },
+  {
+    citation:
       "Subedi, A., Islam, T., Khan, R., Hassan, A., Hoogesteger, S. (2022). Identification of heat threshold and heat hotspot in Rajshahi, Bangladesh. Red Cross Red Crescent Climate Centre.",
     href: "https://southasia.iclei.org",
     tag: "Published",
@@ -404,21 +419,6 @@ export const publications = [
       "Sultana, N.N., Jabeed, A., Rahman, M.A., Hasan, S., Islam, T., Podder, S., Mallick, S.S., Akter, H., Nath, T.K., Ullah, M.S., & Paul, A. (2021). COVID-19 in Bangladeshi Daily Newspapers: A Thematic Analysis of Media Coverage. Journal of Global Communication, 14(2), 70–84.",
     href: "https://indianjournals.com/article/jgc-14-2-002",
     tag: "Published",
-  },
-  {
-    citation:
-      "Uddin, M.S., Mahmud, K., Islam, T., & Rahman, M.A. Explainable machine learning assessment of hydroclimatic and land-surface controls on agricultural drought in North-Western Bangladesh. Journal of Hydrology.",
-    tag: "Under review",
-  },
-  {
-    citation:
-      "Uddin, M.S., Mitra, B., Rahman, M.S., Mahmud, K., Islam, T., Rahman, S.M., & Rahman, M.M. Integrating shared socioeconomic pathways and deep learning for future CO₂ emission forecasts in major European Union economies. Environment, Development and Sustainability.",
-    tag: "Accepted with minor corrections",
-  },
-  {
-    citation:
-      "Uddin, M.S., Mahmud, K., Rahaman, M.A., Mitra, B., Rahman, S.M., Islam, T., Rahman, M.M., & Rahman, M.S. Hands-on geomatics for marine conservation. In Marine biodiversity dynamics in the Arabian Peninsula. Springer.",
-    tag: "Under review",
   },
 ];
 

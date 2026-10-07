@@ -3,7 +3,7 @@ import { publications } from "../data/content";
 
 export default function Publications() {
   return (
-    <section id="publications" className="bg-ink-50/60 py-20 dark:bg-ink-900/30 sm:py-28">
+    <section id="publications" className="py-20 sm:py-28">
       <div className="container-px">
         <h2 className="text-sm font-semibold uppercase tracking-widest text-accent-600 dark:text-accent-400">
           Publications
