@@ -51,15 +51,45 @@ export const softwareProjects = [
     contribution: "95% individual contribution",
     description:
       "A full-stack desktop GIS — FastAPI backend, React/TypeScript/MapLibre GL client in a Tauri shell — with Hiron, a native ReAct-style AI agent that understands your project and runs multi-step GIS and SAR workflows from plain-language instructions. No code required.",
+    facts: [
+      { value: "1,568+", label: "automated backend tests" },
+      { value: "16", label: "domain toolboxes" },
+      { value: "254", label: "documented methods" },
+      { value: "95%", label: "individual contribution" },
+    ],
     highlights: [
-      "Native AI throughout: Hiron, a project-aware AI agent rather than a chatbot, plus an AI button in every tool that explains parameters, live previews and results in the context of your own layers.",
-      "Automatic data fetcher for spatial data of every kind — Google Earth Engine (Sentinel-1/2, SRTM, MODIS, JRC Surface Water, CHIRPS), OpenStreetMap, GADM, Natural Earth, STAC catalogues, ArcGIS Online, AWS S3, PostGIS and web services — clipped to the area of interest and loaded automatically.",
-      "SAR/InSAR implemented from first principles — radiometric calibration (β⁰/σ⁰/γ⁰), Lee/Frost/Gamma-MAP speckle filtering, Range-Doppler terrain correction with Sentinel-1 orbit interpolation and a full InSAR chain — inside a SAR Studio organised around DInSAR, PS-InSAR, SBAS, PolSAR and TomoSAR workflows.",
-      "Every processing tool exports a reproducible report — inputs, parameters, outputs and CRS — coupled with the academic references behind the method, drawn from a built-in library of 254 documented methods.",
-      "16 domain toolboxes (disaster, agriculture, urban planning, utilities, water, forestry, coastal, health and more), GeoAI and machine/deep learning, a Digital Twin workspace, and a 20-tool integrated surveying module for field teams.",
-      "Built for coders too: an integrated Python console and a Python-scriptable layout manager (matplotlib, cartopy, geopandas, rasterio) for publication-ready maps.",
-      "Universal ingest (Shapefile, GeoTIFF, GeoPackage, NetCDF, HDF5, KML/GML) with automated CRS/geometry validation and vector tiling that renders 250k+ vertex datasets in-browser — validated by 1,568+ automated backend tests.",
-      "Launching on a freemium model: core tools free, with advanced tools in paid tiers based on their complexity and licensing requirements.",
+      {
+        title: "Hiron — a native AI agent",
+        text: "A project-aware AI agent, not a chatbot — plus an AI button in every tool that explains parameters, live previews and results using your own layers.",
+      },
+      {
+        title: "Automatic data fetcher",
+        text: "Spatial data of every kind from Google Earth Engine, OpenStreetMap, GADM, Natural Earth, STAC, ArcGIS Online, AWS S3, PostGIS and web services — clipped to your area and loaded automatically.",
+      },
+      {
+        title: "SAR/InSAR from first principles",
+        text: "Radiometric calibration (β⁰/σ⁰/γ⁰), Lee/Frost/Gamma-MAP filtering, Range-Doppler terrain correction and a full InSAR chain, in a SAR Studio built around DInSAR, PS-InSAR, SBAS, PolSAR and TomoSAR.",
+      },
+      {
+        title: "Reports with academic references",
+        text: "Every tool exports a reproducible report — inputs, parameters, outputs and CRS — citing the literature behind the method from a library of 254 documented methods.",
+      },
+      {
+        title: "16 domain toolboxes",
+        text: "Disaster, agriculture, urban planning, utilities, water, forestry, coastal, health and more — plus GeoAI, machine & deep learning, a Digital Twin workspace and a 20-tool surveying module.",
+      },
+      {
+        title: "Built for coders",
+        text: "An integrated Python console and a Python-scriptable layout manager (matplotlib, cartopy, geopandas, rasterio) for publication-ready maps.",
+      },
+      {
+        title: "Universal ingest, tested at scale",
+        text: "Shapefile, GeoTIFF, GeoPackage, NetCDF, HDF5 and KML/GML with automatic CRS and geometry checks; vector tiling renders 250k+ vertices in-browser. Validated by 1,568+ automated backend tests.",
+      },
+      {
+        title: "Freemium model",
+        text: "Core tools free; advanced tools offered in paid tiers based on their complexity and licensing requirements.",
+      },
     ],
     stack: [
       "FastAPI",
