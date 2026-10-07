@@ -36,7 +36,8 @@ const hlText = (h) => (typeof h === "string" ? h : h.text);
 function FeaturedCard({ project }) {
   return (
     <article className="rounded-3xl border border-ink-200 bg-white p-6 dark:border-ink-800 dark:bg-ink-900/40 sm:p-10">
-      <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
+      <div className={project.video ? "grid items-center gap-8 lg:grid-cols-12 lg:gap-12" : ""}>
+        {project.video && (
         <div className="lg:col-span-7">
           <VideoDemo video={project.video} name={project.name} />
           {project.images?.length > 0 && (
@@ -52,8 +53,9 @@ function FeaturedCard({ project }) {
             </div>
           )}
         </div>
+        )}
 
-        <div className="lg:col-span-5">
+        <div className={project.video ? "lg:col-span-5" : "max-w-4xl"}>
           <p className="text-xs font-semibold uppercase tracking-widest text-ink-400 dark:text-ink-500">
             {project.org} · {project.period}
           </p>
@@ -62,7 +64,7 @@ function FeaturedCard({ project }) {
           <p className="mt-4 text-[15px] leading-relaxed text-ink-500 dark:text-ink-400">{project.description}</p>
 
           {project.facts?.length > 0 && (
-            <dl className="mt-6 grid grid-cols-2 gap-3">
+            <dl className={`mt-6 grid grid-cols-2 gap-3 ${project.video ? "" : "sm:grid-cols-4"}`}>
               {project.facts.map((f) => (
                 <div
                   key={f.label}
@@ -136,7 +138,7 @@ function ProjectLinks({ project }) {
           href={l.href}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm font-medium text-accent-600 hover:underline dark:text-accent-400"
+          className="inline-flex items-center gap-2 rounded-full bg-accent-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-700"
         >
           {l.label}
           <ExternalLink size={14} />

@@ -168,25 +168,54 @@ export const softwareProjects = [
   {
     id: "gridemy-lms",
     name: "Gridemy LMS",
-    subtitle: "Learning management system",
+    subtitle: "The LMS built for how institutions actually run",
     org: "SAR.Sense Geointelligence Lab",
     period: "2025 – Present",
     description:
-      "A learning management system currently in active use by the Department of Geography and Environmental Studies, University of Chittagong, and under institutional review for procurement by the Centre for Climate Change and Environmental Health (3CEH), Asian University for Women.",
-    highlights: [
-      "In active production use by a university department.",
-      "Under review for cross-institutional procurement, reflecting real-world adoption beyond the original department.",
+      "A full-stack learning management system with Arshi, a built-in bilingual AI assistant — designed from the ground up for Bangladeshi universities rather than adapted from a global template. Live in the Department of Geography and Environmental Studies, University of Chittagong, and under institutional review for procurement by the Centre for Climate Change and Environmental Health (3CEH), Asian University for Women.",
+    facts: [
+      { value: "Live", label: "in active departmental use" },
+      { value: "3", label: "role-based dashboards" },
+      { value: "9", label: "integrated core modules" },
+      { value: "EN · BN", label: "bilingual AI assistant" },
     ],
-    stack: ["React", "TypeScript", "FastAPI"],
-    video: {
-      src: asset("/videos/gridemy-lms-demo.mp4"),
-      poster: asset("/videos/gridemy-lms-poster.jpg"),
-    },
-    images: [asset("/images/gridemy-lms-1.jpg"), asset("/images/gridemy-lms-2.jpg")],
-    // TODO: point this at the real repo once it's public
-    github: "https://github.com/TowhidulIslam27",
-    links: [],
-    featured: false,
+    highlights: [
+      {
+        title: "Arshi — AI built into the workflow",
+        text: "Drafts complete courses from a syllabus PDF, builds assignments with rubrics and marks, and writes notices and reference letters in English or Bengali — faculty review everything before it is published.",
+      },
+      {
+        title: "Outcome-based curriculum",
+        text: "Courses with CLOs mapped to PLOs, syllabi, readings and teaching strategies — structured natively the way accreditation bodies expect, with no plugins required.",
+      },
+      {
+        title: "Smart attendance",
+        text: "GPS, rotating-QR or combined self-check-in with a configurable radius, live present/late/absent summaries and automatic 75% threshold alerts.",
+      },
+      {
+        title: "Assignments with integrity checks",
+        text: "Timestamped digital submissions screened for AI-generated text and similarity, with AI-suggested grades and feedback; students can self-check drafts, which are never stored.",
+      },
+      {
+        title: "Early warning for at-risk students",
+        text: "Engagement signals from the first weeks of term surface students at risk of dropping out while there is still time to intervene.",
+      },
+      {
+        title: "Endorsements & AI recommendation letters",
+        text: "Five-domain student endorsements feed AI-drafted Letters of Recommendation grounded in grades, attendance and conduct — faculty keep full editorial control.",
+      },
+      {
+        title: "Faculty performance & research",
+        text: "A transparent, AI-explained 100-point performance score across teaching, research and endorsements, plus a board where faculty post research opportunities for students.",
+      },
+      {
+        title: "Department governance",
+        text: "Dashboards for admins, faculty and students, chairman terms, requests, notices, an events calendar, forums and messaging — replacing WhatsApp groups and paper registers.",
+      },
+    ],
+    stack: ["React", "TypeScript", "FastAPI", "AI assistant", "GPS / QR attendance"],
+    links: [{ label: "Visit Gridemy", href: "https://sarsense.com/gridemy" }],
+    featured: true,
   },
 ];
 
