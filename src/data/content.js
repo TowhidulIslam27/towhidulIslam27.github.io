@@ -41,6 +41,53 @@ export const about = {
   ],
 };
 
+export const researchInterests = {
+  intro:
+    "I study how a changing climate becomes hazard and risk on the ground — and how Earth observation, InSAR and explainable AI can measure that risk early enough to act on it. I am seeking a PhD that connects satellite-derived evidence with the people and infrastructure exposed to climate-driven hazards, particularly in data-scarce, high-risk deltas such as Bangladesh.",
+  areas: [
+    {
+      icon: "waves",
+      title: "Climate-driven hazards & compound risk",
+      text: "How floods, cyclones, extreme heat and land subsidence interact and amplify one another in deltaic and coastal cities — and how multi-hazard, compound-risk models can guide climate adaptation.",
+      tags: ["Compound flooding", "Multi-hazard risk", "Climate adaptation", "Deltas"],
+    },
+    {
+      icon: "mountain",
+      title: "Geohazards & ground deformation with InSAR",
+      text: "Measuring land subsidence, slow-moving landslides and infrastructure deformation with PS-InSAR and SBAS time series, validated against GNSS, in regions where ground monitoring is sparse.",
+      tags: ["PS-InSAR", "SBAS", "Land subsidence", "Landslides"],
+    },
+    {
+      icon: "brain",
+      title: "Explainable AI for hazard susceptibility",
+      text: "Machine-learning models whose drivers can be understood and trusted — using SHAP and LIME to rank the causes of landslide, deformation and drought susceptibility for planners and decision-makers.",
+      tags: ["XAI", "SHAP / LIME", "Susceptibility mapping"],
+    },
+    {
+      icon: "thermometer",
+      title: "Urban climate risk & extreme heat",
+      text: "Urban heat islands, heat thresholds and pluvial flooding in rapidly growing South Asian cities, and their consequences for health, mobility and vulnerable communities.",
+      tags: ["Urban heat island", "Heat thresholds", "Pluvial flooding", "Urban mobility"],
+    },
+    {
+      icon: "cloud",
+      title: "Hydro-climatic extremes & drought",
+      text: "Rainfall anomalies, thunderstorm and lightning intensity, and agricultural drought under a changing climate — combining long climate records with satellite land-surface observations.",
+      tags: ["Climate anomalies", "Agricultural drought", "Extreme weather"],
+    },
+    {
+      icon: "users",
+      title: "Coupled human–environment risk modelling",
+      text: "Linking remote sensing with agent-based models of household vulnerability to test adaptation measures — drainage upgrades, groundwater management — before they are built.",
+      tags: ["Agent-based modelling", "Vulnerability", "Scenario analysis", "Policy"],
+    },
+  ],
+  cta: {
+    title: "Open to PhD opportunities",
+    text: "I am looking for funded PhD positions in climate risk, geohazards and Earth observation. If my interests align with your group, I would be glad to talk.",
+  },
+};
+
 export const softwareProjects = [
   {
     id: "bangis-pro",
