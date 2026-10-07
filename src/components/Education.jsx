@@ -1,5 +1,5 @@
-import { GraduationCap, Award, BookOpen, Languages } from "lucide-react";
-import { education, awards, training, languages } from "../data/content";
+import { GraduationCap, Award, Languages } from "lucide-react";
+import { education, awards, languages } from "../data/content";
 
 export default function Education() {
   return (
@@ -65,26 +65,6 @@ export default function Education() {
           )}
         </div>
 
-        {training?.length > 0 && (
-          <div className="md:col-span-2">
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-accent-600 dark:text-accent-400">
-              Training, Courses & Talks
-            </h2>
-            <ul className="mt-6 grid gap-x-10 gap-y-4 sm:grid-cols-2">
-              {training.map((t) => (
-                <li key={t.name} className="flex gap-4">
-                  <BookOpen className="mt-0.5 shrink-0 text-accent-500" size={18} />
-                  <div>
-                    <p className="text-sm font-semibold text-ink-900 dark:text-white">{t.name}</p>
-                    <p className="text-xs text-ink-400 dark:text-ink-500">
-                      {t.org} · {t.date}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
       </div>
     </section>
   );
