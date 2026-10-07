@@ -28,10 +28,10 @@ export default function Hero() {
 
           <div className="mt-2 flex flex-wrap items-center gap-4">
             <a
-              href="#projects"
+              href="#research"
               className="inline-flex items-center gap-2 rounded-full bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-accent-700"
             >
-              View my work
+              View my research
               <ArrowRight size={16} />
             </a>
             <a

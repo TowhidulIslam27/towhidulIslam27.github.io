@@ -4,7 +4,7 @@ import { researchInterests, profile } from "../data/content";
 const ICONS = { waves: Waves, mountain: Mountain, brain: Brain, thermometer: Thermometer, cloud: CloudRain, users: Users };
 
 export default function ResearchInterests() {
-  const { intro, areas, cta } = researchInterests;
+  const { intro, areas, questions, cta } = researchInterests;
   return (
     <section id="interests" className="py-20 sm:py-28">
       <div className="container-px">
@@ -12,11 +12,11 @@ export default function ResearchInterests() {
           Research Interests
         </p>
         <p className="mt-2 max-w-3xl text-2xl font-semibold text-ink-900 dark:text-white">
-          Climate change, hazards and the science of measuring risk from space
+          Measuring how the ground moves — and what that means for climate risk
         </p>
         <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink-500 dark:text-ink-400">{intro}</p>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {areas.map((a) => {
             const Icon = ICONS[a.icon] ?? Waves;
             return (
@@ -43,6 +43,24 @@ export default function ResearchInterests() {
             );
           })}
         </div>
+
+        {questions?.length > 0 && (
+          <div className="mt-12">
+            <p className="text-sm font-semibold uppercase tracking-widest text-ink-500 dark:text-ink-400">
+              Questions I want to answer
+            </p>
+            <ol className="mt-5 flex flex-col gap-4">
+              {questions.map((q, i) => (
+                <li key={i} className="flex gap-4 text-base leading-relaxed text-ink-700 dark:text-ink-200">
+                  <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-accent-50 text-xs font-semibold text-accent-600 dark:bg-accent-900/30 dark:text-accent-300">
+                    {i + 1}
+                  </span>
+                  {q}
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
 
         {cta && (
           <div className="mt-10 flex flex-col gap-6 rounded-2xl border border-accent-200 bg-gradient-to-br from-accent-50 to-white p-8 dark:border-accent-800/60 dark:from-accent-900/20 dark:to-ink-950 md:flex-row md:items-center md:justify-between">

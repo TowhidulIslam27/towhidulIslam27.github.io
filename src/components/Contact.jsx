@@ -10,7 +10,7 @@ export default function Contact() {
           Contact
         </h2>
         <p className="mt-3 max-w-xl text-2xl font-semibold text-ink-900 dark:text-white sm:text-3xl">
-          Working on a geospatial, SAR, or research collaboration? Let's talk.
+          Supervising research on InSAR, geohazards or climate risk? I'd be glad to hear from you.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-4">

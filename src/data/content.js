@@ -12,9 +12,9 @@ const asset = (path) =>
 
 export const profile = {
   name: "Towhidul Islam",
-  role: "Geospatial Consultant, Developer & Researcher",
+  role: "Geospatial Researcher · InSAR & Climate Hazards",
   tagline:
-    "I turn satellite data into decisions on climate and hazard risk — leading a geospatial research lab, advancing SAR/InSAR research and building AI-powered tools that make Earth observation usable.",
+    "I study how land subsidence, landslides and flooding combine into risk in data-scarce deltas like Bangladesh — using SAR/InSAR, explainable AI and the open tools I build to make that research reproducible.",
   location: "Chittagong, Bangladesh",
   email: "m.towhid92@gmail.com",
   phone: "+8801632211582",
@@ -23,19 +23,11 @@ export const profile = {
   photo: asset("/ti.jpg"),
 };
 
-export const stats = [
-  { label: "Team members led", value: "35+" },
-  { label: "Research project coordinated", value: "3+" },
-  { label: "Personnel trained", value: "100+" },
-  { label: "Research paper contribution", value: "5" },
-  { label: "Full-stack software developed", value: "2" },
-  { label: "Geospatial tools developed", value: "90+" },
-];
-
 export const about = {
   paragraphs: [
-    "I am the founder and CEO of SAR.Sense Geointelligence Lab, where I lead research on SAR/InSAR deformation monitoring and explainable AI, and build software that makes satellite data directly usable for planners, agencies and scientists.",
-    "Trained in geography, Earth observation and urban management at ITC (University of Twente), IHS (Erasmus University Rotterdam) and the University of Chittagong, I believe in Science for Society: when research hits friction — data sourcing, preprocessing, fragmented pipelines — I build the tools that remove it, and teach others to use them.",
+    "I am a geospatial researcher working on ground deformation and climate hazards. As founder and research lead of SAR.Sense Geointelligence Lab in Chittagong, I lead three projects that use PS-InSAR, SBAS and explainable machine learning to map where the ground is moving across Bangladesh, why, and how it compounds flood risk in cities.",
+    "I trained in Earth observation at ITC (University of Twente), urban management at IHS (Erasmus University Rotterdam), and geography at the University of Chittagong. My ITC research measured a slow-moving landslide with multi-sensor PSInSAR in a data-sparse region; my Erasmus thesis studied how pluvial flooding disrupts travel in Chittagong. Both questions now meet in my current work.",
+    "When research is slowed by data sourcing or fragmented pipelines, I build the tools to fix it — which is how BanGIS Pro started. I am now looking for a funded PhD to take this work further.",
   ],
 };
 
@@ -44,45 +36,32 @@ export const researchInterests = {
     "How a changing climate becomes hazard and risk on the ground — and how Earth observation, InSAR and explainable AI can measure it early enough to act, especially in data-scarce deltas like Bangladesh.",
   areas: [
     {
-      icon: "waves",
-      title: "Climate hazards & compound risk",
-      text: "How floods, cyclones, heat and subsidence amplify one another in deltaic cities.",
-      tags: ["Compound flooding", "Multi-hazard risk", "Adaptation"],
-    },
-    {
       icon: "mountain",
-      title: "Geohazards with InSAR",
-      text: "Subsidence, landslides and infrastructure deformation from PS-InSAR and SBAS, validated with GNSS.",
+      title: "Ground deformation from InSAR",
+      text: "Subsidence and landslide motion from PS-InSAR and SBAS time series, validated with GNSS, in regions with little ground monitoring.",
       tags: ["PS-InSAR", "SBAS", "Subsidence", "Landslides"],
     },
     {
+      icon: "waves",
+      title: "Compound risk in deltaic cities",
+      text: "How subsidence changes exposure to pluvial flooding and heat, and how households adapt — coupling InSAR with agent-based models.",
+      tags: ["Pluvial flooding", "Compound risk", "Agent-based models"],
+    },
+    {
       icon: "brain",
-      title: "Explainable AI for susceptibility",
-      text: "Trustworthy ML that shows planners what drives landslide, deformation and drought risk.",
+      title: "Explainable AI for hazard susceptibility",
+      text: "Machine-learning susceptibility models whose drivers planners can inspect and trust.",
       tags: ["XAI", "SHAP / LIME", "Susceptibility"],
     },
-    {
-      icon: "thermometer",
-      title: "Urban heat & flooding",
-      text: "Heat islands, heat thresholds and pluvial floods in fast-growing South Asian cities.",
-      tags: ["Urban heat", "Pluvial flooding", "Mobility"],
-    },
-    {
-      icon: "cloud",
-      title: "Hydro-climatic extremes",
-      text: "Rainfall anomalies, lightning and agricultural drought under a changing climate.",
-      tags: ["Climate anomalies", "Drought", "Extremes"],
-    },
-    {
-      icon: "users",
-      title: "Human–environment risk modelling",
-      text: "Coupling remote sensing with agent-based models to test adaptation before it is built.",
-      tags: ["Agent-based models", "Vulnerability", "Policy"],
-    },
+  ],
+  questions: [
+    "How much does land subsidence increase pluvial flood exposure in fast-growing deltaic cities, and where?",
+    "Which geological and human drivers best explain observed deformation — and can explainable models show planners where to act first?",
+    "How can InSAR-based risk products be validated and made reliable where ground data are scarce?",
   ],
   cta: {
-    title: "Open to PhD opportunities",
-    text: "Seeking funded PhD positions in climate risk, geohazards and Earth observation.",
+    title: "Open to funded PhD positions",
+    text: "I am looking for a funded PhD in geohazards, climate risk or Earth observation, ideally on InSAR-based deformation and compound flood risk. I am ready to commit to it full-time.",
   },
 };
 
@@ -102,14 +81,12 @@ export const softwareProjects = [
       { value: "254", label: "documented methods" },
     ],
     highlights: [
-      { title: "Hiron — a native AI agent", text: "A project-aware agent, plus an AI button in every tool." },
-      { title: "Automatic data fetcher", text: "Earth Engine, OSM, STAC, ArcGIS Online, S3, PostGIS and more — fetched and clipped for you." },
-      { title: "SAR/InSAR from first principles", text: "Calibration, speckle filtering, terrain correction and full InSAR, PolSAR and TomoSAR workflows." },
-      { title: "Reports with academic references", text: "Every tool exports a reproducible report citing the method behind it." },
-      { title: "16 specialised domain toolboxes", text: "Plus GeoAI, ML & DL, a Digital Twin workspace and a surveying module." },
-      { title: "Built for coders", text: "Integrated Python console and a Python-scriptable layout manager." },
-      { title: "Tested at scale", text: "Universal ingest and in-browser vector tiling, validated by 1,568+ backend tests." },
-      { title: "Freemium model", text: "Core tools free; advanced tools in paid tiers." },
+      { title: "SAR/InSAR from first principles", text: "Radiometric calibration, speckle filtering, Range-Doppler terrain correction and full InSAR, PolSAR and TomoSAR workflows." },
+      { title: "Reproducible by design", text: "Every tool exports a report citing the published method behind it." },
+      { title: "Hiron — a native AI agent", text: "Plans and runs multi-step GIS and SAR workflows from plain-language instructions." },
+      { title: "Automatic data access", text: "Earth Engine, OSM, STAC, PostGIS and more — fetched and clipped to the study area." },
+      { title: "Built for researchers who code", text: "Integrated Python console and scriptable layouts alongside the no-code interface." },
+      { title: "Tested at scale", text: "Universal format ingest and in-browser vector tiling, validated by 1,568+ automated backend tests." },
     ],
     stack: [
       "FastAPI",
@@ -127,13 +104,9 @@ export const softwareProjects = [
       src: asset("/videos/BanGIS_Pro_Showcase_v3.mp4"),
       poster: asset("/videos/bangis-pro-poster.jpg"),
     },
-    images: [
-      asset("/images/bangis-pro-1.jpg"),
-      asset("/images/bangis-pro-2.jpg"),
-      asset("/images/bangis-pro-3.jpg"),
-    ],
-    // TODO: point this at the real repo once it's public, e.g. `${profile.github}/bangis-pro`
-    github: "https://github.com/TowhidulIslam27",
+    // Add screenshots here once they exist in /public/images, e.g. asset("/images/bangis-pro-1.jpg").
+    images: [],
+    // Add `github: "<repo url>"` once the repository is public.
     links: [
       // { label: "Live demo", href: "#" },
     ],
@@ -154,14 +127,11 @@ export const softwareProjects = [
       { value: "EN · BN", label: "bilingual AI assistant" },
     ],
     highlights: [
-      { title: "Arshi — AI in the workflow", text: "Drafts courses, assignments, rubrics and reference letters in English or Bengali." },
-      { title: "Outcome-based curriculum", text: "CLOs mapped to PLOs, natively — the way accreditation bodies expect." },
-      { title: "Smart attendance", text: "GPS and rotating-QR check-in with automatic threshold alerts." },
-      { title: "Integrity checks", text: "Submissions screened for AI-generated text and similarity before grading." },
-      { title: "Endorsements & recommendation letters", text: "Five-domain endorsements feed AI-drafted letters faculty can edit." },
-      { title: "Early warning & governance", text: "Flags at-risk students early; runs notices, requests and messaging in one place." },
+      { title: "Arshi — AI in the workflow", text: "Drafts courses, assignments and rubrics in English or Bengali." },
+      { title: "Outcome-based curriculum", text: "Course outcomes mapped to programme outcomes, as accreditation bodies expect." },
+      { title: "Early warning", text: "Flags students at risk early so faculty can step in." },
     ],
-    stack: ["React", "TypeScript", "FastAPI", "AI assistant", "GPS / QR attendance"],
+    stack: ["React", "TypeScript", "FastAPI", "AI assistant"],
     links: [{ label: "Visit Gridemy", href: "https://sarsense.com/gridemy" }],
     featured: true,
   },
@@ -172,19 +142,19 @@ export const researchProjects = [
     name: "Deformation Susceptibility with InSAR & XAI",
     role: "Research Lead",
     period: "May 2025 – Present",
-    description: "Explainable models that fuse InSAR with geological and human drivers to show planners where — and why — the ground is moving.",
+    description: "Ongoing. Building explainable models (SHAP / LIME) that combine InSAR deformation with geological and human drivers, to show planners where the ground is moving and why.",
   },
   {
     name: "Nationwide Land Deformation Map of Bangladesh",
     role: "Research Lead",
     period: "May 2025 – Present",
-    description: "Millimetre-level subsidence and uplift for 2015–2025 from Sentinel-1 and ALOS-2, validated against GNSS.",
+    description: "Ongoing. Processing Sentinel-1 and ALOS-2 archives with PS-InSAR and SBAS to map subsidence and uplift for 2015–2025, with validation against GNSS stations.",
   },
   {
     name: "InSAR–ABM Compound-Risk Framework for Chittagong",
     role: "Research Lead",
     period: "Jun. 2025 – Present",
-    description: "InSAR, flood data and an agent-based model test drainage and groundwater interventions — cutting modelled flood–subsidence risk by up to 40%.",
+    description: "Ongoing. Coupling InSAR, flood data and an agent-based model of households to test how drainage and groundwater interventions change flood–subsidence risk.",
   },
 ];
 
@@ -209,13 +179,13 @@ export const academicProjects = [
 export const experience = [
   {
     org: "SAR.Sense Geointelligence Lab",
-    role: "Founder & Co-ordinator",
+    role: "Founder & Research Lead",
     location: "Chittagong, Bangladesh",
     period: "May 2025 – Present",
     bullets: [
-      "Built a research lab of 35+ members and 5 external collaborators across three units: hazards, agriculture & forestry, and water & environment.",
-      "Lead three InSAR and XAI research projects; built BanGIS Pro and Gridemy LMS.",
-      "Launched SAR.Sense Academy for training in remote sensing, geospatial AI and climate-risk modelling.",
+      "Lead three InSAR and explainable-AI research projects on deformation and compound flood risk.",
+      "Coordinate a research team of 35+ members and 5 external collaborators across three units: hazards, agriculture & forestry, and water & environment.",
+      "Designed and built BanGIS Pro and Gridemy LMS; run training in remote sensing and geospatial AI through SAR.Sense Academy.",
     ],
   },
   {
@@ -263,17 +233,9 @@ export const experience = [
 // what's actually in /public/images/experience/.
 export const experiencePhotos = [
   { src: asset("/images/experience/Lecturing on Spatial Data.JPG"), caption: "Lecturing on spatial data fundamentals" },
-  { src: asset("/images/experience/Lecturing on remote sensing.JPG"), caption: "Introducing remote sensing concepts" },
-  { src: asset("/images/experience/Conducting session on remote sensing.JPG"), caption: "Running a GIS training session" },
-  { src: asset("/images/experience/Lecturing on projections .JPG"), caption: "Teaching map projections" },
-  { src: asset("/images/experience/lecturing on vector vs raster data.jpg"), caption: "Explaining vector vs. raster data" },
-  { src: asset("/images/experience/Explaining geographic layers.JPG"), caption: "Breaking down geographic data layers" },
   { src: asset("/images/experience/During a lecture on flood susceptibility modelling.jpg"), caption: "Walking through flood susceptibility modelling" },
-  { src: asset("/images/experience/On a GIS for defense session.jpg"), caption: "Delivering a GIS-for-defense training" },
+  { src: asset("/images/experience/Lecturing on remote sensing.JPG"), caption: "Introducing remote sensing concepts" },
   { src: asset("/images/experience/Helping out a hands on GIS session.jpg"), caption: "Hands-on support during a GIS workshop" },
-  { src: asset("/images/experience/At the end of a fundamental GIS course.jpg"), caption: "Wrapping up a GIS fundamentals course" },
-  { src: asset("/images/experience/A busy day as a trainer.JPG"), caption: "Another full day of training" },
-  { src: asset("/images/experience/Happy moment with students.JPG"), caption: "A proud moment with the trainees" },
 ];
 
 export const education = [
@@ -313,7 +275,7 @@ export const skills = [
     items: [
       "SNAP",
       "LiCSBAS",
-      "PyGMT SAR",
+      "PyGMTSAR",
       "SARscape",
       "PSInSAR / SBAS",
       "Radiometric Calibration",
@@ -347,7 +309,7 @@ export const publications = [
   {
     citation:
       "Uddin, M.S., Mitra, B., Rahman, M.S., Mahmud, K., Islam, T., Rahman, S.M., & Rahman, M.M. (2026). Integrating shared socioeconomic pathways and deep learning for future CO₂ emission forecasts in major European Union economies. Environment, Development and Sustainability.",
-    tag: "Accepted with minor corrections",
+    tag: "Minor revision",
   },
   {
     citation:
@@ -362,7 +324,7 @@ export const publications = [
   {
     citation:
       "Subedi, A., Islam, T., Khan, R., Hassan, A., Hoogesteger, S. (2022). Identification of heat threshold and heat hotspot in Rajshahi, Bangladesh. Red Cross Red Crescent Climate Centre.",
-    href: "https://southasia.iclei.org",
+    href: "https://heathealth.info/resources/identification-of-heat-threshold-and-heat-hotspots-in-rajshahi-bangladesh/",
     tag: "Published",
   },
   {
@@ -374,7 +336,7 @@ export const publications = [
 ];
 
 export const awards = [
-  { name: "ITC Excellence Scholarship", year: "2021 - 2023", body: "Faculty of Geo-Information Science and Earth Observation, University of Twente" },
-  { name: "OKP Scholarship (Nuffic)", year: "2019 - 2020", body: "MSc in Urban Management and Development, Erasmus University Rotterdam" },
-  { name: "Fulbright Master's Fellowship", year: "2016 - 2017", body: "University of Chittagong" },
+  { name: "ITC Excellence Scholarship", year: "2021", body: "Partial scholarship · PgD in Geo-Information Science and Earth Observation, University of Twente" },
+  { name: "OKP Scholarship (Nuffic)", year: "2019", body: "Full scholarship · MSc in Urban Management and Development, Erasmus University Rotterdam" },
+  { name: "Full-Free Master's Stipend", year: "2017", body: "MS in Geography and Environmental Studies, University of Chittagong" },
 ];
