@@ -274,28 +274,19 @@ export const education = [
 
 export const skills = [
   {
-    group: "SAR / InSAR Tools & Methodologies",
+    group: "SAR / InSAR",
     icon: "satellite",
-    items: [
-      "SNAP",
-      "LiCSBAS",
-      "PyGMTSAR",
-      "SARscape",
-      "PSInSAR / SBAS",
-      "Radiometric Calibration",
-      "Speckle Filtering",
-      "Range-Doppler Terrain Correction",
-    ],
+    items: ["SNAP", "LiCSBAS", "PyGMTSAR", "SARscape", "Time-series InSAR (PS / SBAS)", "Sentinel-1 & ALOS-2", "GNSS validation"],
   },
   {
     group: "Geospatial Development & Web GIS",
     icon: "code",
-    items: ["React", "TypeScript", "FastAPI", "Tauri", "MapLibre GL", "JavaScript", "PostGIS", "LaTeX"],
+    items: ["React", "TypeScript", "JavaScript", "FastAPI", "Tauri", "MapLibre GL"],
   },
   {
-    group: "Data Science & Spatial Analytics",
+    group: "Programming & Spatial Analytics",
     icon: "database",
-    items: ["Python", "GeoPandas", "Rasterio", "NumPy", "Shapely", "Open3D", "laspy", "MATLAB", "R", "PostgreSQL"],
+    items: ["Python (GeoPandas, Rasterio, NumPy)", "R", "MATLAB", "PostgreSQL / PostGIS", "Explainable ML (SHAP / LIME)"],
   },
   {
     group: "GIS & Earth Observation Platforms",
