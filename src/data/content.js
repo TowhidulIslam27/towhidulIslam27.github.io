@@ -234,10 +234,10 @@ export const experience = [
 export const experiencePhotos = [
   { src: asset("/images/experience/Lecturing on Spatial Data.JPG"), caption: "Lecturing on spatial data fundamentals, Asian University for Women" },
   { src: asset("/images/experience/During a lecture on flood susceptibility modelling.jpg"), caption: "Walking through flood susceptibility modelling, Asian University for Women" },
-  { src: asset("/images/experience/Lecturing on remote sensing.JPG"), caption: "Introducing remote sensing concepts, Asian University for Women" },
+  { src: asset("/images/experience/Conducting session on remote sensing.JPG"), caption: "Conducting geospatial training, Asian University for Women" },
   { src: asset("/images/experience/Helping out a hands on GIS session.jpg"), caption: "Hands-on support during a GIS workshop, Asian University for Women" },
   { src: asset("/images/experience/Explaining geographic layers.JPG"), caption: "Explaining how geographic data layers stack, Asian University for Women" },
-  { src: asset("/images/experience/Conducting session on remote sensing.JPG"), caption: "One-on-one guidance in a remote sensing session, Asian University for Women" },
+  { src: asset("/images/experience/Lecturing on remote sensing.JPG"), caption: "Introducing remote sensing concepts, Asian University for Women" },
   { src: asset("/images/experience/On a GIS for defense session.jpg"), caption: "GIS training for army officers, School of Artillery" },
   { src: asset("/images/experience/At the end of a fundamental GIS course.jpg"), caption: "Closing a one-week ArcGIS course, Department of Statistics, University of Chittagong" },
 ];
