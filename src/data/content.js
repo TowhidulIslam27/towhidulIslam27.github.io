@@ -14,7 +14,7 @@ export const profile = {
   name: "Towhidul Islam",
   role: "Geospatial Researcher · InSAR & Climate Hazards",
   tagline:
-    "I study how land subsidence, landslides and flooding combine into risk in data-scarce deltas like Bangladesh — using SAR/InSAR, explainable AI and the open tools I build to make that research reproducible.",
+    "I study how land subsidence, landslides and flooding combine into risk in data-scarce deltas like Bangladesh — using SAR/InSAR, explainable AI and the tools I build to make that research reproducible.",
   location: "Chittagong, Bangladesh",
   email: "m.towhid92@gmail.com",
   phone: "+8801632211582",
@@ -69,16 +69,16 @@ export const softwareProjects = [
   {
     id: "bangis-pro",
     name: "BanGIS Pro",
-    subtitle: "GIS Made Simple — an AI-integrated geospatial & SAR platform",
+    subtitle: "GIS Made Simple — an AI-integrated geospatial platform",
     org: "SAR.Sense Geointelligence Lab",
-    period: "2025 – Present",
+    period: "May 2024 – Present",
     description:
       "A full-stack desktop GIS with Hiron, a native AI agent that runs multi-step GIS and SAR workflows from plain-language instructions — no code required.",
     facts: [
-      { value: "800+", label: "geospatial tools" },
-      { value: "16", label: "specialised domain toolboxes" },
-      { value: "1,568+", label: "automated backend tests" },
-      { value: "254", label: "documented methods" },
+      { value: "650+", label: "geospatial tools (312 completed)" },
+      { value: "27", label: "specialised domain toolboxes" },
+      { value: "1,685", label: "automated backend tests" },
+      { value: "271", label: "documented methods" },
     ],
     highlights: [
       { title: "SAR/InSAR from first principles", text: "Radiometric calibration, speckle filtering, Range-Doppler terrain correction and full InSAR, PolSAR and TomoSAR workflows." },
@@ -86,7 +86,7 @@ export const softwareProjects = [
       { title: "Hiron — a native AI agent", text: "Plans and runs multi-step GIS and SAR workflows from plain-language instructions." },
       { title: "Automatic data access", text: "Earth Engine, OSM, STAC, PostGIS and more — fetched and clipped to the study area." },
       { title: "Built for researchers who code", text: "Integrated Python console and scriptable layouts alongside the no-code interface." },
-      { title: "Tested at scale", text: "Universal format ingest and in-browser vector tiling, validated by 1,568+ automated backend tests." },
+      { title: "Tested at scale", text: "Universal format ingest and in-browser vector tiling, validated by 1,685 automated backend tests." },
     ],
     stack: [
       "FastAPI",
@@ -139,22 +139,22 @@ export const softwareProjects = [
 
 export const researchProjects = [
   {
+    name: "InSAR–ABM Compound-Risk Framework for Chittagong",
+    role: "Research Lead",
+    period: "Nov. 2025 – Present",
+    description: "Ongoing. Coupling InSAR, flood data and an agent-based model of households to test how drainage upgrades and groundwater management change flood–subsidence risk.",
+  },
+  {
     name: "Deformation Susceptibility with InSAR & XAI",
     role: "Research Lead",
-    period: "May 2025 – Present",
-    description: "Ongoing. Building explainable models (SHAP / LIME) that combine InSAR deformation with geological and human drivers, to show planners where the ground is moving and why.",
+    period: "Sept. 2025 – Present",
+    description: "Ongoing. Building explainable models (SHAP / LIME) that link InSAR deformation to geological and human drivers, so planners see where the ground is moving and why.",
   },
   {
     name: "Nationwide Land Deformation Map of Bangladesh",
     role: "Research Lead",
     period: "May 2025 – Present",
-    description: "Ongoing. Processing Sentinel-1 and ALOS-2 archives with PS-InSAR and SBAS to map subsidence and uplift for 2015–2025, with validation against GNSS stations.",
-  },
-  {
-    name: "InSAR–ABM Compound-Risk Framework for Chittagong",
-    role: "Research Lead",
-    period: "Jun. 2025 – Present",
-    description: "Ongoing. Coupling InSAR, flood data and an agent-based model of households to test how drainage and groundwater interventions change flood–subsidence risk.",
+    description: "Ongoing. Processing Sentinel-1 and ALOS-2 archives with PS-InSAR and SBAS to map subsidence and uplift for 2015–2025, with GNSS validation.",
   },
 ];
 
@@ -162,17 +162,17 @@ export const academicProjects = [
   {
     name: "Slow-moving Landslide Deformation",
     period: "Sep. 2023 – Apr. 2024",
-    description: "Multi-sensor PSInSAR (Envisat, Sentinel-1) with geomorphological mapping in a data-sparse region.",
+    description: "Multi-sensor PSInSAR (Envisat, Sentinel-1) with geomorphological mapping in a data-sparse region; showed Sentinel-1 resolves finer deformation than Envisat.",
   },
   {
     name: "Soil–Plant Digital Twin (PySTEMMUS-SCOPE)",
     period: "Nov. 2023 – Feb. 2024",
-    description: "Simulated energy fluxes and soil moisture at Harvard Forest under seasonal climate extremes.",
+    description: "Simulated energy fluxes, soil temperature and soil moisture at Harvard Forest under seasonal climate extremes.",
   },
   {
     name: "Physically-based Flood Modelling",
     period: "Feb. 2023 – Mar. 2023",
-    description: "LISEM modelling of sequential levee breaches on the Maas and Waal rivers.",
+    description: "LISEM modelling of sequential levee breaches on the Maas and Waal; compared flood arrival, depth and velocity.",
   },
 ];
 
@@ -185,7 +185,7 @@ export const experience = [
     bullets: [
       "Lead three InSAR and explainable-AI research projects on deformation and compound flood risk.",
       "Coordinate a research team of 35+ members and 5 external collaborators across three units: hazards, agriculture & forestry, and water & environment.",
-      "Designed and built BanGIS Pro and Gridemy LMS; run training in remote sensing and geospatial AI through SAR.Sense Academy.",
+      "Built BanGIS Pro and Gridemy LMS; teach remote sensing and geospatial AI through SAR.Sense Academy.",
     ],
   },
   {
@@ -194,8 +194,9 @@ export const experience = [
     location: "Dhaka, Bangladesh",
     period: "Jan. 2025 – May 2025",
     bullets: [
-      "Designed the spatial sampling framework for a national nutrition survey with IFPRI and Johns Hopkins (64 areas, 4 districts).",
-      "Built Kobo-integrated survey maps that improved field data accuracy by 30%, and trained 15 researchers.",
+      "Designed the spatial sampling framework for the One Nutrition Coverage Survey with IFPRI and Johns Hopkins University: 64 enumeration areas in Dhaka, Sylhet, Khulna and Rangpur.",
+      "Built Kobo-linked field maps that raised field data accuracy by about 30%.",
+      "Trained 15 researchers in GIS workflows.",
     ],
   },
   {
@@ -204,8 +205,9 @@ export const experience = [
     location: "The Hague, Netherlands",
     period: "Feb. 2021 – Jul. 2021",
     bullets: [
-      "Set Rajshahi's heat threshold from 30 years of climate data and mapped ward-level heat hotspots with Landsat.",
-      "Co-authored the ARRCC / UK Met Office study adopted into Rajshahi City Corporation's climate resilience strategy.",
+      "Set Rajshahi's heat threshold at 38 °C from 30 years of meteorological records (1990–2020).",
+      "Mapped ward-level heat hotspots with Landsat surface temperature, NDVI and NDWI.",
+      "Co-authored the ARRCC / UK Met Office study; its recommendations were adopted by Rajshahi City Corporation.",
     ],
   },
   {
@@ -214,16 +216,16 @@ export const experience = [
     location: "Chittagong, Bangladesh",
     period: "Jan. 2017 – Aug. 2019",
     bullets: [
-      "Trained 20 army officers in GIS for military intelligence, raising measured ArcGIS competency by 60%.",
+      "Taught ArcGIS for military intelligence and counter-bombardment to 20 army officers; pre/post-course tests showed a 60% gain in ArcGIS competency.",
     ],
   },
   {
     org: "University of Chittagong — Dept. of Geography and Environmental Studies",
-    role: "Research Assistant",
+    role: "Research Assistant (part-time, alongside MS)",
     location: "Chittagong, Bangladesh",
     period: "Apr. 2017 – Aug. 2019",
     bullets: [
-      "Analysed lightning-disaster trends in Bangladesh and supervised 6 undergraduate researchers.",
+      "Analysed trends, impacts and management of lightning disasters in Bangladesh; supervised 6 undergraduate researchers.",
     ],
   },
 ];
@@ -255,14 +257,14 @@ export const education = [
     degree: "MSc, Urban Management and Development",
     period: "Sept. 2019 – Jan. 2021",
     location: "Rotterdam, The Netherlands",
-    note: "Research: Effects of Pluvial Urban Flood on Intracity Travel Behavior — Chittagong City, Bangladesh",
+    note: "Research: Effects of Pluvial Urban Flood on Intracity Travel Behavior: The Case of Chittagong City, Bangladesh",
   },
   {
     school: "University of Chittagong",
     degree: "MS, Geography and Environmental Studies",
     period: "Jan. 2017 – Oct. 2018",
     location: "Chittagong, Bangladesh",
-    note: "Research: Climatic Anomalies and Thunderstorm Intensity Over Bangladesh",
+    note: "Research: Climatic Anomalies and Thunderstorm Intensity Over Bangladesh: A Spatiotemporal Analysis",
   },
   {
     school: "University of Chittagong",
@@ -286,7 +288,7 @@ export const skills = [
   {
     group: "Programming & Spatial Analytics",
     icon: "database",
-    items: ["Python (GeoPandas, Rasterio, NumPy)", "R", "MATLAB", "PostgreSQL / PostGIS", "Explainable ML (SHAP / LIME)"],
+    items: ["Python (GeoPandas, Rasterio, NumPy)", "R", "MATLAB", "PostgreSQL / PostGIS", "Explainable ML (SHAP / LIME)", "LaTeX"],
   },
   {
     group: "GIS & Earth Observation Platforms",
@@ -297,7 +299,7 @@ export const skills = [
 
 
 export const languages = [
-  { name: "English", detail: "IELTS Academic 7.0 (CEFR C1) — Aug. 2026" },
+  { name: "English", detail: "IELTS Academic 7.0 overall, CEFR C1 (L 7.0, R 7.5, W 6.5, S 7.0) — Aug. 2026" },
 ];
 
 export const publications = [
@@ -314,13 +316,13 @@ export const publications = [
   {
     citation:
       "Uddin, M.S., Mahmud, K., Rahaman, M.A., Mitra, B., Rahman, S.M., Islam, T., Rahman, M.M., & Rahman, M.S. Hands-on geomatics for marine conservation. In Marine biodiversity dynamics in the Arabian Peninsula. Springer.",
-    tag: "Under review",
+    tag: "Book chapter, under review",
   },
   {
     citation:
-      "Subedi, A., Islam, T., Khan, R., Hassan, A., Hoogesteger, S. (2022). Identification of heat threshold and heat hotspot in Rajshahi, Bangladesh. Red Cross Red Crescent Climate Centre.",
+      "Subedi, A., Islam, T., Khan, R., Hassan, A., Hoogesteger, S. (2022). Identification of heat threshold and heat hotspots in Rajshahi, Bangladesh. Red Cross Red Crescent Climate Centre (ARRCC programme).",
     href: "https://heathealth.info/resources/identification-of-heat-threshold-and-heat-hotspots-in-rajshahi-bangladesh/",
-    tag: "Published",
+    tag: "Technical report",
   },
   {
     citation:
@@ -331,7 +333,7 @@ export const publications = [
 ];
 
 export const awards = [
-  { name: "ITC Excellence Scholarship", year: "2021", body: "Partial scholarship · PgD in Geo-Information Science and Earth Observation, University of Twente" },
-  { name: "OKP Scholarship (Nuffic)", year: "2019", body: "Full scholarship · MSc in Urban Management and Development, Erasmus University Rotterdam" },
-  { name: "Full-Free Master's Stipend", year: "2017", body: "MS in Geography and Environmental Studies, University of Chittagong" },
+  { name: "ITC Excellence Scholarship", year: "Aug. 2021 – Jul. 2023", body: "Partial scholarship · PgD in Geo-Information Science and Earth Observation, University of Twente" },
+  { name: "OKP Scholarship (Nuffic)", year: "Sept. 2019 – Aug. 2020", body: "Full scholarship · MSc in Urban Management and Development, Erasmus University Rotterdam" },
+  { name: "Full-Free Master's Stipend", year: "Jul. 2016 – Jun. 2017", body: "MS in Geography and Environmental Studies, University of Chittagong" },
 ];
