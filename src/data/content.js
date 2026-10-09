@@ -169,7 +169,7 @@ export const experience = [
     org: "Asian University for Women",
     role: "Training Instructor (week-long course)",
     location: "Chittagong, Bangladesh",
-    period: "26 – 31 Aug. 2026",
+    period: "Aug. 2026",
     bullets: [
       "Delivered a week-long GIS and remote sensing course covering spatial data fundamentals, geographic data layers and flood susceptibility modelling, with hands-on lab sessions.",
     ],
@@ -218,7 +218,7 @@ export const experience = [
     org: "University of Chittagong — Dept. of Statistics",
     role: "Training Instructor (week-long course)",
     location: "Chittagong, Bangladesh",
-    period: "20 – 26 May 2017",
+    period: "May 2017",
     bullets: [
       "Delivered a week-long ArcGIS fundamentals course for the Department of Statistics.",
     ],
