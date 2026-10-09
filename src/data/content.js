@@ -75,7 +75,7 @@ export const softwareProjects = [
     description:
       "A full-stack desktop GIS with Hiron, a native AI agent that runs multi-step GIS and SAR workflows from plain-language instructions — no code required.",
     facts: [
-      { value: "650+", label: "geospatial tools (312 completed)" },
+      { value: "312", label: "geospatial tools released, more in the pipeline" },
       { value: "27", label: "specialised domain toolboxes" },
       { value: "1,685", label: "automated backend tests" },
       { value: "271", label: "documented methods" },
@@ -110,29 +110,6 @@ export const softwareProjects = [
     links: [
       // { label: "Live demo", href: "#" },
     ],
-    featured: true,
-  },
-  {
-    id: "gridemy-lms",
-    name: "Gridemy LMS",
-    subtitle: "The LMS built for how institutions actually run",
-    org: "SAR.Sense Geointelligence Lab",
-    period: "2025 – Present",
-    description:
-      "A learning management system with Arshi, a bilingual AI assistant, built for Bangladeshi universities. Live at the University of Chittagong and under procurement review at Asian University for Women.",
-    facts: [
-      { value: "Live", label: "in active departmental use" },
-      { value: "3", label: "role-based dashboards" },
-      { value: "9", label: "integrated core modules" },
-      { value: "EN · BN", label: "bilingual AI assistant" },
-    ],
-    highlights: [
-      { title: "Arshi — AI in the workflow", text: "Drafts courses, assignments and rubrics in English or Bengali." },
-      { title: "Outcome-based curriculum", text: "Course outcomes mapped to programme outcomes, as accreditation bodies expect." },
-      { title: "Early warning", text: "Flags students at risk early so faculty can step in." },
-    ],
-    stack: ["React", "TypeScript", "FastAPI", "AI assistant"],
-    links: [{ label: "Visit Gridemy", href: "https://sarsense.com/gridemy" }],
     featured: true,
   },
 ];
@@ -185,7 +162,16 @@ export const experience = [
     bullets: [
       "Lead three InSAR and explainable-AI research projects on deformation and compound flood risk.",
       "Coordinate a research team of 35+ members and 5 external collaborators across three units: hazards, agriculture & forestry, and water & environment.",
-      "Built BanGIS Pro and Gridemy LMS; teach remote sensing and geospatial AI through SAR.Sense Academy.",
+      "Built BanGIS Pro, the lab's research GIS platform; teach remote sensing and geospatial AI through SAR.Sense Academy.",
+    ],
+  },
+  {
+    org: "Asian University for Women",
+    role: "Training Instructor (week-long course)",
+    location: "Chittagong, Bangladesh",
+    period: "26 – 31 Aug. 2026",
+    bullets: [
+      "Delivered a week-long GIS and remote sensing course covering spatial data fundamentals, geographic data layers and flood susceptibility modelling, with hands-on lab sessions.",
     ],
   },
   {
@@ -226,6 +212,15 @@ export const experience = [
     period: "Apr. 2017 – Aug. 2019",
     bullets: [
       "Analysed trends, impacts and management of lightning disasters in Bangladesh; supervised 6 undergraduate researchers.",
+    ],
+  },
+  {
+    org: "University of Chittagong — Dept. of Statistics",
+    role: "Training Instructor (week-long course)",
+    location: "Chittagong, Bangladesh",
+    period: "20 – 26 May 2017",
+    bullets: [
+      "Delivered a week-long ArcGIS fundamentals course for the Department of Statistics.",
     ],
   },
 ];
@@ -302,33 +297,51 @@ export const languages = [
   { name: "English", detail: "IELTS Academic 7.0 overall, CEFR C1 (L 7.0, R 7.5, W 6.5, S 7.0) — Aug. 2026" },
 ];
 
+// Training & talks relevant to InSAR, Earth observation and climate risk (off-topic items trimmed).
+export const training = [
+  { name: "COMET InSAR Training Workshop", detail: "InSAR time-series analysis, LiCSBAS, deformation modelling and deep learning", date: "Nov. 2025" },
+  { name: "Turing MLxDL", detail: "Machine learning and deep learning course, Turing Students Rotterdam", date: "Jun. 2020" },
+  { name: "NASA ARSET: SAR for Land Cover Applications", detail: "NASA Applied Remote Sensing Training", date: "Aug. – Sep. 2019" },
+  { name: "NASA ARSET: Remote Sensing for Land Degradation and Sustainable Cities SDGs", detail: "NASA Applied Remote Sensing Training", date: "Jul. 2019" },
+  { name: "NASA ARSET: Investigating Time Series of Satellite Imagery", detail: "NASA Applied Remote Sensing Training", date: "Apr. 2019" },
+  { name: "Invited talk, ICCBSA-2018", detail: "Intl. Conference on Climate Change, Biodiversity and Sustainable Agriculture, Assam Agricultural University, India", date: "Dec. 2018" },
+  { name: "Spatial Analysis Using R", detail: "Institute of Remote Sensing, Jahangirnagar University", date: "Dec. 2017" },
+  { name: "Google Earth Engine workshop", detail: "IRS-JU and ICIMOD, supported by NASA/SERVIR-HKH", date: "Aug. 2017" },
+];
+
+// group: "main" = hazards & climate-risk work, listed first; "other" = listed under "Other contributions".
 export const publications = [
-  {
-    citation:
-      "Uddin, M.S., Mitra, B., Rahman, M.S., Mahmud, K., Islam, T., Rahman, S.M., & Rahman, M.M. (2026). Integrating shared socioeconomic pathways and deep learning for future CO₂ emission forecasts in major European Union economies. Environment, Development and Sustainability.",
-    tag: "Minor revision",
-  },
   {
     citation:
       "Uddin, M.S., Mahmud, K., Islam, T., & Rahman, M.A. (2026). Explainable machine learning assessment of hydroclimatic and land-surface controls on agricultural drought in North-Western Bangladesh. Journal of Hydrology.",
     tag: "Under review",
-  },
-  {
-    citation:
-      "Uddin, M.S., Mahmud, K., Rahaman, M.A., Mitra, B., Rahman, S.M., Islam, T., Rahman, M.M., & Rahman, M.S. Hands-on geomatics for marine conservation. In Marine biodiversity dynamics in the Arabian Peninsula. Springer.",
-    tag: "Book chapter, under review",
+    group: "main",
   },
   {
     citation:
       "Subedi, A., Islam, T., Khan, R., Hassan, A., Hoogesteger, S. (2022). Identification of heat threshold and heat hotspots in Rajshahi, Bangladesh. Red Cross Red Crescent Climate Centre (ARRCC programme).",
     href: "https://heathealth.info/resources/identification-of-heat-threshold-and-heat-hotspots-in-rajshahi-bangladesh/",
     tag: "Technical report",
+    group: "main",
+  },
+  {
+    citation:
+      "Uddin, M.S., Mitra, B., Rahman, M.S., Mahmud, K., Islam, T., Rahman, S.M., & Rahman, M.M. (2026). Integrating shared socioeconomic pathways and deep learning for future CO₂ emission forecasts in major European Union economies. Environment, Development and Sustainability.",
+    tag: "Minor revision",
+    group: "other",
+  },
+  {
+    citation:
+      "Uddin, M.S., Mahmud, K., Rahaman, M.A., Mitra, B., Rahman, S.M., Islam, T., Rahman, M.M., & Rahman, M.S. Hands-on geomatics for marine conservation. In Marine biodiversity dynamics in the Arabian Peninsula. Springer.",
+    tag: "Book chapter, under review",
+    group: "other",
   },
   {
     citation:
       "Sultana, N.N., Jabeed, A., Rahman, M.A., Hasan, S., Islam, T., Podder, S., Mallick, S.S., Akter, H., Nath, T.K., Ullah, M.S., & Paul, A. (2021). COVID-19 in Bangladeshi Daily Newspapers: A Thematic Analysis of Media Coverage. Journal of Global Communication, 14(2), 70–84.",
     href: "https://indianjournals.com/article/jgc-14-2-002",
     tag: "Published",
+    group: "other",
   },
 ];
 

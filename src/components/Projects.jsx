@@ -230,10 +230,10 @@ export default function Projects() {
   return (
     <section id="projects" className="container-px py-20 sm:py-28">
       <h2 className="text-sm font-semibold uppercase tracking-widest text-accent-600 dark:text-accent-400">
-        Software & Digital Products
+        Research Software
       </h2>
       <p className="mt-2 max-w-2xl text-2xl font-semibold text-ink-900 dark:text-white">
-        Software I've designed and built
+        Tools I build to make the research reproducible
       </p>
 
       <div className="mt-10 flex flex-col gap-6">
