@@ -1,6 +1,6 @@
 # Towhidul Islam — Portfolio
 
-Personal portfolio of **Towhidul Islam** — geospatial AI researcher, SAR/InSAR specialist, and founder of SAR.Sense Geo-Intelligence Lab.
+Personal portfolio of **Towhidul Islam** — geospatial researcher in InSAR and climate hazards, and founder of SAR.Sense Geointelligence Lab.
 
 Live site: https://towhidulislam27.github.io/
 

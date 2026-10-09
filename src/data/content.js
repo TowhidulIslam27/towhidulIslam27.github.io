@@ -69,11 +69,11 @@ export const softwareProjects = [
   {
     id: "bangis-pro",
     name: "BanGIS Pro",
-    subtitle: "GIS Made Simple — an AI-integrated geospatial platform",
-    org: "SAR.Sense Geointelligence Lab",
+    subtitle: "GIS Made Simple — a research platform for reproducible SAR and GIS workflows",
+    org: "Begun independently · SAR.Sense Geointelligence Lab since 2025",
     period: "May 2024 – Present",
     description:
-      "A full-stack desktop GIS with Hiron, a native AI agent that runs multi-step GIS and SAR workflows from plain-language instructions — no code required.",
+      "A desktop GIS for SAR and geospatial research, with Hiron, a native AI agent that plans and runs multi-step workflows from plain-language instructions.",
     facts: [
       { value: "312", label: "geospatial tools released, more in the pipeline" },
       { value: "27", label: "specialised domain toolboxes" },
@@ -86,7 +86,6 @@ export const softwareProjects = [
       { title: "Hiron — a native AI agent", text: "Plans and runs multi-step GIS and SAR workflows from plain-language instructions." },
       { title: "Automatic data access", text: "Earth Engine, OSM, STAC, PostGIS and more — fetched and clipped to the study area." },
       { title: "Built for researchers who code", text: "Integrated Python console and scriptable layouts alongside the no-code interface." },
-      { title: "Tested at scale", text: "Universal format ingest and in-browser vector tiling, validated by 1,685 automated backend tests." },
     ],
     stack: [
       "FastAPI",
@@ -119,25 +118,25 @@ export const researchProjects = [
     name: "InSAR–ABM Compound-Risk Framework for Chittagong",
     role: "Research Lead",
     period: "Nov. 2025 – Present",
-    description: "Ongoing. Coupling InSAR, flood data and an agent-based model of households to test how drainage upgrades and groundwater management change flood–subsidence risk.",
+    description: "Coupling InSAR, flood data and an agent-based model of households to test how drainage upgrades and groundwater management change flood–subsidence risk.",
   },
   {
     name: "Deformation Susceptibility with InSAR & XAI",
     role: "Research Lead",
     period: "Sept. 2025 – Present",
-    description: "Ongoing. Building explainable models (SHAP / LIME) that link InSAR deformation to geological and human drivers, so planners see where the ground is moving and why.",
+    description: "Building explainable models (SHAP / LIME) that link InSAR deformation to geological and human drivers, so planners see where the ground is moving and why.",
   },
   {
     name: "Nationwide Land Deformation Map of Bangladesh",
     role: "Research Lead",
     period: "May 2025 – Present",
-    description: "Ongoing. Processing Sentinel-1 and ALOS-2 archives with PS-InSAR and SBAS to map subsidence and uplift for 2015–2025, with GNSS validation.",
+    description: "Processing Sentinel-1 and ALOS-2 archives with PS-InSAR and SBAS to map subsidence and uplift for 2015–2025, with GNSS validation.",
   },
 ];
 
 export const academicProjects = [
   {
-    name: "Slow-moving Landslide Deformation",
+    name: "Slow-moving Landslide Deformation (ITC thesis)",
     period: "Sep. 2023 – Apr. 2024",
     description: "Multi-sensor PSInSAR (Envisat, Sentinel-1) with geomorphological mapping in a data-sparse region; showed Sentinel-1 resolves finer deformation than Envisat.",
   },
@@ -166,15 +165,6 @@ export const experience = [
     ],
   },
   {
-    org: "Asian University for Women",
-    role: "Training Instructor (week-long course)",
-    location: "Chittagong, Bangladesh",
-    period: "Aug. 2026",
-    bullets: [
-      "Delivered a week-long GIS and remote sensing course covering spatial data fundamentals, geographic data layers and flood susceptibility modelling, with hands-on lab sessions.",
-    ],
-  },
-  {
     org: "icddr,b — Nutrition Research Division",
     role: "GIS Consultant (National)",
     location: "Dhaka, Bangladesh",
@@ -198,7 +188,7 @@ export const experience = [
   },
   {
     org: "Halishahar School of Artillery",
-    role: "GIS Training Instructor",
+    role: "GIS Training Instructor (part-time)",
     location: "Chittagong, Bangladesh",
     period: "Jan. 2017 – Aug. 2019",
     bullets: [
@@ -215,12 +205,13 @@ export const experience = [
     ],
   },
   {
-    org: "University of Chittagong — Dept. of Statistics",
-    role: "Training Instructor (week-long course)",
+    org: "Asian University for Women · Dept. of Statistics, University of Chittagong",
+    role: "Guest Training Instructor (week-long courses)",
     location: "Chittagong, Bangladesh",
-    period: "May 2017",
+    period: "May 2017 · Aug. 2026",
     bullets: [
-      "Delivered a week-long ArcGIS fundamentals course for the Department of Statistics.",
+      "Asian University for Women (Aug. 2026): GIS and remote sensing course covering spatial data fundamentals, geographic data layers and flood susceptibility modelling, with hands-on lab sessions.",
+      "Dept. of Statistics, University of Chittagong (May 2017): ArcGIS fundamentals course.",
     ],
   },
 ];
@@ -320,7 +311,7 @@ export const publications = [
   },
   {
     citation:
-      "Uddin, M.S., Mahmud, K., Rahaman, M.A., Mitra, B., Rahman, S.M., Islam, T., Rahman, M.M., & Rahman, M.S. Hands-on geomatics for marine conservation. In Marine biodiversity dynamics in the Arabian Peninsula. Springer.",
+      "Uddin, M.S., Mahmud, K., Rahaman, M.A., Mitra, B., Rahman, S.M., Islam, T., Rahman, M.M., & Rahman, M.S. (in review). Hands-on geomatics for marine conservation. In Marine biodiversity dynamics in the Arabian Peninsula. Springer.",
     tag: "Book chapter, under review",
     group: "other",
   },
