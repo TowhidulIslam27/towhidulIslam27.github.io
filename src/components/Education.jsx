@@ -1,5 +1,5 @@
-import { GraduationCap, Award, Languages, Presentation } from "lucide-react";
-import { education, awards, languages, training } from "../data/content";
+import { GraduationCap, Award, Languages } from "lucide-react";
+import { education, awards, languages } from "../data/content";
 
 export default function Education() {
   return (
@@ -58,27 +58,6 @@ export default function Education() {
                     <p className="text-sm text-ink-500 dark:text-ink-400">
                       <span className="font-semibold text-ink-900 dark:text-white">{l.name}</span> — {l.detail}
                     </p>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-
-          {training?.length > 0 && (
-            <>
-              <h2 className="mt-12 text-sm font-semibold uppercase tracking-widest text-accent-600 dark:text-accent-400">
-                Training & Talks
-              </h2>
-              <div className="mt-6 flex flex-col gap-4">
-                {training.map((t) => (
-                  <div key={t.name} className="flex gap-4">
-                    <Presentation className="mt-0.5 shrink-0 text-accent-500" size={20} />
-                    <div>
-                      <h3 className="text-sm font-semibold text-ink-900 dark:text-white">
-                        {t.name} <span className="font-normal text-ink-400 dark:text-ink-500">— {t.date}</span>
-                      </h3>
-                      <p className="text-sm text-ink-500 dark:text-ink-400">{t.detail}</p>
-                    </div>
                   </div>
                 ))}
               </div>

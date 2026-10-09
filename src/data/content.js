@@ -26,7 +26,7 @@ export const profile = {
 export const about = {
   paragraphs: [
     "I am a geospatial researcher working on ground deformation and climate hazards. As founder and research lead of SAR.Sense Geointelligence Lab in Chittagong, I lead three projects that use PS-InSAR, SBAS and explainable machine learning to map where the ground is moving across Bangladesh, why, and how it compounds flood risk in cities.",
-    "I trained in Earth observation at ITC (University of Twente), urban management at IHS (Erasmus University Rotterdam), and geography at the University of Chittagong. My ITC research measured a slow-moving landslide with multi-sensor PSInSAR in a data-sparse region; my Erasmus thesis studied how pluvial flooding disrupts travel in Chittagong. Both questions now meet in my current work.",
+    "I trained in Earth observation at ITC (University of Twente), urban management at IHS (Erasmus University Rotterdam), and geography at the University of Chittagong. My ITC research measured a slow-moving landslide with multi-sensor PSInSAR in a data-sparse region, and I have since deepened my InSAR time-series and deformation-modelling skills at the COMET InSAR Training Workshop (2025). My Erasmus thesis studied how pluvial flooding disrupts travel in Chittagong. Both questions now meet in my current work.",
     "When research is slowed by data sourcing or fragmented pipelines, I build the tools to fix it — which is how BanGIS Pro started. I am now looking for a funded PhD to take this work further.",
   ],
 };
@@ -295,18 +295,6 @@ export const skills = [
 
 export const languages = [
   { name: "English", detail: "IELTS Academic 7.0 overall, CEFR C1 (L 7.0, R 7.5, W 6.5, S 7.0) — Aug. 2026" },
-];
-
-// Training & talks relevant to InSAR, Earth observation and climate risk (off-topic items trimmed).
-export const training = [
-  { name: "COMET InSAR Training Workshop", detail: "InSAR time-series analysis, LiCSBAS, deformation modelling and deep learning", date: "Nov. 2025" },
-  { name: "Turing MLxDL", detail: "Machine learning and deep learning course, Turing Students Rotterdam", date: "Jun. 2020" },
-  { name: "NASA ARSET: SAR for Land Cover Applications", detail: "NASA Applied Remote Sensing Training", date: "Aug. – Sep. 2019" },
-  { name: "NASA ARSET: Remote Sensing for Land Degradation and Sustainable Cities SDGs", detail: "NASA Applied Remote Sensing Training", date: "Jul. 2019" },
-  { name: "NASA ARSET: Investigating Time Series of Satellite Imagery", detail: "NASA Applied Remote Sensing Training", date: "Apr. 2019" },
-  { name: "Invited talk, ICCBSA-2018", detail: "Intl. Conference on Climate Change, Biodiversity and Sustainable Agriculture, Assam Agricultural University, India", date: "Dec. 2018" },
-  { name: "Spatial Analysis Using R", detail: "Institute of Remote Sensing, Jahangirnagar University", date: "Dec. 2017" },
-  { name: "Google Earth Engine workshop", detail: "IRS-JU and ICIMOD, supported by NASA/SERVIR-HKH", date: "Aug. 2017" },
 ];
 
 // group: "main" = hazards & climate-risk work, listed first; "other" = listed under "Other contributions".
