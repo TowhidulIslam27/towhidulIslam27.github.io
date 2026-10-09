@@ -161,7 +161,7 @@ export const experience = [
     period: "May 2025 – Present",
     bullets: [
       "Lead three InSAR and explainable-AI research projects on deformation and compound flood risk.",
-      "Coordinate a research team of 35+ members and 5 external collaborators across three units: hazards, agriculture & forestry, and water & environment.",
+      "Coordinate a research team of 20+ members and 5 external collaborators across three units: hazards, agriculture & forestry, and water & environment.",
       "Built BanGIS Pro, the lab's research GIS platform; teach remote sensing and geospatial AI through SAR.Sense Academy.",
     ],
   },
