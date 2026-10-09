@@ -242,7 +242,7 @@ export const experiencePhotos = [
 export const education = [
   {
     school: "University of Twente (ITC)",
-    degree: "PgD, Geo-Information Science and Earth Observation",
+    degree: "PgD, Geo-Information Science and Earth Observation — specialisation in Natural Hazards and Disaster Risk Reduction",
     period: "Aug. 2021 – Apr. 2024",
     location: "Enschede, The Netherlands",
     note: "Research: Assessing Spatiotemporal Deformation Pattern of a Slow-Moving Landslide in a Data-Sparse Region",
